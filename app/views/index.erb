@@ -1,0 +1,15 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>Blog Index</h1>
+      <% @posts.each do |post| %>
+        <li><a id="post_name" href="/posts/<%= post.id %>"><%= post.name %>-<%= post.content %></a> </li>
+      <% end %>
+      <li> second post was deleted. </li>  
+  </body>
+</html>
